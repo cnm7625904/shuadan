@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.toast.wang.shuadan.MainActivity">
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_url"
+        android:hint="请输入网址"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatEditText
+        android:inputType="number"
+        android:id="@+id/et_times"
+        android:hint="请输入次数"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        android:layout_margin="15dp"
+        android:text="开始刷单"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_stop"
+        android:layout_margin="15dp"
+        android:text="停止刷单"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <WebView
+        android:visibility="gone"
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_times"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="已完成0次"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</android.support.v7.widget.LinearLayoutCompat>
